@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+  <!--Start of Navigation bar-->
+  <nav class="navbar navbar-dark bg-black fixed-top">
+    <div class="container-fluid d-flex align-items-center">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="icons/2.jpg" alt="Logo" class="d-inline-block align-text-top" style="height: 40px;">
+      </a>
+
+      <!-- Menu Toggle Button -->
+      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Search Button (Right-aligned) -->
+      <button class="btn btn-outline-light ms-auto" type="button" id="searchToggle" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-expanded="false" aria-controls="navbarSearch">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+
+    <!-- Collapsible Search Input -->
+    <div class="collapse position-absolute top-10 start-0 w-100 p-3 " id="navbarSearch">
+      <form class="d-flex align-items-center" >
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-controls="navbarSearch">X</button>
+        </form>
+    </div>
+
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-top bg-black text-bg-dark " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" >
+      <div class="offcanvas-header">
+         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item  d-flex align-items-center">
+            <span class="bi bi-camera-reels-fill me-2"></span>
+            <a class="nav-link active" aria-current="page" href="#">Movies</a>
+          </li>
+          <li class="nav-item  d-flex align-items-center">
+            <i class="bi bi-tv me-2"></i>
+            <a class="nav-link" href="#">TV Shows</a>
+          </li>
+          <li class="nav-item  d-flex align-items-center">
+            <i class="bi bi-joystick me-2"></i>
+            <a class="nav-link" href="#">Games & Apps</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--End of Navigation bar-->
+
+  <!--Start of Carousel-->
+  <main id="carouselCaptions" class="carousel slide">
+    <div class="carousel-indicators position-absolute bottom-0">
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="pictures/Carousel_9.jpg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fw-bold fs-4">F1</h5>
+          <p>In Cinemas June 27,2025</p>
+        </div>
+        <div class="carousel-caption-mobile d-md-none text-center text-white bg-dark p-3 position-absolute bottom-0 start-0 w-100"><!--Devices lesser than md-->
+          <h5 class="fw-bold fs-5">F1</h5>
+          <p class="fs-6">In Cinemas June 27,2025</p>
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img src="pictures/Carousel_19.jpg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fw-bold fs-4">SINNERS</h5>
+          <p>In Cinemas March 17,2025</p>
+        </div>
+        <div class="carousel-caption-mobile d-md-none text-center text-white bg-dark p-3 position-absolute bottom-0 start-0 w-100"><!--Devices lesser than md-->
+          <h5 class="fw-bold fs-5">SINNERS</h5>
+          <p class="fs-6">In Cinemas March 17,2025</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="pictures/Carousel_27.jpg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fw-bold fs-4">THE COLORS WITHIN</h5>
+          <p>In Cinemas November 22</p>
+        </div>
+        <div class="carousel-caption-mobile d-md-none text-center text-white bg-dark p-3 position-absolute bottom-0 start-0 w-100"><!--Devices lesser than md-->
+          <h5 class="fw-bold fs-5">THE COLORS WITHIN</h5>
+          <p class="fs-6">In Cinemas November 22</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="pictures/Carousel_15.jpg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fw-bold fs-4">MICKEY 17</h5>
+          <p class="fs-8">In Cinemas April 18,2025</p>
+        </div>
+        <div class="carousel-caption-mobile d-md-none text-center text-white bg-dark p-3 position-absolute bottom-0 start-0 w-100"><!--Devices lesser than md-->
+          <h5 class="fw-bold fs-5">MICKEY 17</h5>
+          <p class="fs-6">In Cinemas April 18,2025</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </main><!--End of Carousel-->
+
+  <div class="featured">
+     <p class="vertical-dash fw-bold fs-2 ms-50">FEATURED</p>
+  </div><!--End of Featured Heading-->
+
+  <div class="container">
+    <div id="singleRowCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-container carousel-item active">
+          <div class="  d-flex justify-content-center gap-2">
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/Joker.jpg" id="grid-image" class="d-block w-100" alt="Image 1">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">Joker: Folie à Deux</p>
+              <p class="lh-1 text-black-50">In Cinemas Now</p>
+            </div>
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/a.jpg" id="grid-image" class="d-block w-100" alt="Image 2">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">The Colors Within</p>
+              <p class="lh-1 text-black-50">In Cinemas November 22</p>
+            </div>
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/A20Movie20Teaser20Poster.jpg" id="grid-image" class="d-block w-100" alt="Image 3">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">Minecraft</p>
+              <p class="lh-1 text-black-50">In Cinemas April 4, 2025</p>
+            </div>
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/Poster_13.jpg" id="grid-image" class="d-block w-100" alt="Image 4">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">Companion</p>
+              <p class="lh-1 text-black-50">In Cinemas Jan 31, 2025</p>
+            </div>
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/Poster_14.jpg" id="grid-image" class="d-block w-100" alt="Image 5">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">Christopher Reeve Story</p>
+              <p class="lh-1 text-black-50">In Cinemas Now</p>
+            </div>
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/Poster_15.jpg" id="grid-image" class="d-block w-100" alt="Image 6">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">MICKEY 17</p>
+              <p class="lh-1 text-black-50">In Cinemas April 18</p>
+            </div>
+          </div>
+        </div>
+        <!-- Second Slide -->
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center gap-2">
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/Sinners20Poster.jpg" id="grid-image" class="d-block w-100" alt="Image 7">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">SINNERS</p>
+              <p class="lh-1 text-black-50">In Cinemas Mar 7,2025</p>
+            </div>
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/The20Of20Rings20The20of20Rohirrim20Poster.jpg" id="grid-image" class="d-block w-100" alt="Image 8">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">The Lord of Rings</p>
+              <p class="lh-1 text-black-50">In Cinemas Dec 13</p>
+            </div>
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/a.jpg" id="grid-image" class="d-block w-100" alt="Image 2">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">The Colors Within</p>
+              <p class="lh-1 text-black-50">In Cinemas November 22</p>
+            </div>
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/A20Movie20Teaser20Poster.jpg" id="grid-image" class="d-block w-100" alt="Image 3">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">Minecraft</p>
+              <p class="lh-1 text-black-50">In Cinemas April 4, 2025</p>
+            </div>
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/Poster_13.jpg" id="grid-image" class="d-block w-100" alt="Image 4">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">Companion</p>
+              <p class="lh-1 text-black-50">In Cinemas Jan 31, 2025</p>
+            </div>
+            <div id="grid-img" class="col-6 col-sm-4 col-md-2 d-flex flex-column align-items-center flex-grow-1">
+              <img src="pictures/Poster_15.jpg" id="grid-image" class="d-block w-100" alt="Image 6">
+              <p class="fs-6 d-inline-block lh-1" style="background-color: rgba(108, 117, 125, 0.3);">Movies</p>
+              <p class="fs-6 fw-bold lh-1">MICKEY 17</p>
+              <p class="lh-1 text-black-50">In Cinemas April 18</p>
+            </div>
+            <!-- Add more columns as needed -->
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#singleRowCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#singleRowCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div> 
+  
+
+  <footer class="bg-black text-white">
+    <div class=" d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="text-md-center d-flex flex-row align-items-center">
+        <img src="icons/2.jpg" alt="Logo" style="width:80px;">
+        <span>TM & © 2024 Warner Bros.Inc.</span> 
+      </div>
+      <div class="icon d-flex flex-row justify-content-end align-items-center pb-2">
+        <span>Follow Us</span>
+        <img src="icons/socialIcons_facebook.webp" alt="Fb">
+        <img src="icons/socialIcons_x.webp" alt="X"> 
+        <img src="icons/socialIcons_youtube.webp" alt="Yt">
+      </div>
+    </div>    
+   </footer>
+
+   <footer class="bg-black text-white">
+    <div class="d-flex flex-row justify-content-between align-items-center pt-2">
+      <div class="d-flex flex-md-row flex-column justify-content-between align-items-center">
+        <p class="ms-2 lh-1">About</p>
+        <p class="ms-2 lh-1">Careers</p>
+        <p class="ms-2 lh-1">International</p>
+      </div>
+      <div class="d-flex flex-md-row flex-column justify-content-between align-items-center">
+        <p class="ms-2 lh-1">Terms of Use</p>
+        <p class="ms-2 lh-1">Privacy Policy</p>
+        <p class="ms-2 lh-1">Corporate Social Responsibility</p>
+      </div>
+    </div>
+   </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous"></script>
+</body>
+</html> 
